@@ -1,0 +1,14 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-button{
+  text-transform: initial;
+}
+
+ion-content{
+  --background: #2dd36f;
+}

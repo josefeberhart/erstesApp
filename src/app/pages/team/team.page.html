@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Unser Team</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../assets/fotos/florian.JPG">
+      </ion-avatar>
+      <ion-label>
+        <h2>Florian</h2>
+        <p>Programmierer Ionic, Website</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../assets/fotos/raphi.JPG">
+      </ion-avatar>
+      <ion-label>
+        <h2>Raphael</h2>
+        <p>Datenbank, Server</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button routerLink="/standort">Weiter zu Standort</ion-button>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="add" (click)="zumLoader()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
