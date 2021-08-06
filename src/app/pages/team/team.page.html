@@ -25,6 +25,22 @@
       </ion-label>
     </ion-item>
   </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">Berater</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="insert" *ngFor="let berater of beraters">
+        <ion-label>
+          <h5>Vorname: {{berater.vorname}} </h5>
+          <h5>Nachname: {{berater.nachname}}</h5>
+        </ion-label>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
   <ion-button routerLink="/standort">Weiter zu Standort</ion-button>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="success">

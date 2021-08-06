@@ -13,60 +13,45 @@
   </ion-card-header>
   <ion-card-content>
     <ion-item>
-      <ion-label position="floating">Name</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label position="floating">Vorname</ion-label>
+      <ion-input type="text" [(ngModel)]="vorname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nachname</ion-label>
+      <ion-input type="text" [(ngModel)]="nachname"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">E-Mail</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Passwort</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Passwort bestätigen</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Telefon</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input type="tel" [(ngModel)]="telefon"></ion-input>
     </ion-item>
-    <ion-radio-group>
-      <ion-list-header>Geschlecht</ion-list-header>
-      <ion-item>
-        <ion-label>männlich</ion-label>
-        <ion-radio value="m" slot="start"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>weiblich</ion-label>
-        <ion-radio value="w" slot="start"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
   </ion-card-content>
-</ion-card>
-<ion-card>
+  </ion-card>
+  <ion-card>
   <ion-card-header>
     <ion-card-title>Adresse</ion-card-title>
   </ion-card-header>
   <ion-card-content>
     <ion-item>
       <ion-label position="floating">Straße u. Hausnummer</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="strasse"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">PLZ</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input type="tel" [(ngModel)]="plz"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Ort</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Bundesland</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="ort"></ion-input>
     </ion-item>
   </ion-card-content>
 </ion-card>
-<ion-button size="full" color="light">Registrieren</ion-button>
+<ion-button size="full" color="light" (click)="signup()">Registrieren</ion-button>
 </ion-content>
