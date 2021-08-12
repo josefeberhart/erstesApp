@@ -1,4 +1,11 @@
 <?php
+//neu am 11.8.2021
+//header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
+header('Access-Control-Max-Age: 86400');
+header("Access-Control-Expose-Headers: Content-Length, X-JSON");
+header("Access-Control-Allow-Headers: *");
+
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
@@ -101,7 +108,7 @@ $stmt = $db->prepare( $sql );
 
   if ($password == $db_psw)
   {
-    $_SESSION['user'] = "je@gmx.it";
+    $_SESSION['user'] = "";
     $sql = "SELECT email FROM users WHERE email = :email";
     $stmt->bindParam(':email', $email);
     $stmt->execute();
