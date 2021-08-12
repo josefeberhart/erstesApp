@@ -37,6 +37,8 @@ signup() {
   };
  this.apiService.signupApi(userData).subscribe((res: any) => {
    console.log('SUCCESS ===',res);
+   if (res.success === true) {
    this.router.navigate(['/login']);
+   }
 });
 }}
